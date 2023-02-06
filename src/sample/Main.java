@@ -1,5 +1,6 @@
 package sample;
 
+
 import javafx.application.Application;
 import javafx.beans.binding.ObjectBinding;
 import javafx.beans.property.SimpleBooleanProperty;
@@ -28,7 +29,7 @@ public class HelloApplication extends Application {
     int mistakes = 0;
     boolean gameOver = false;
     Random random = new Random();
-    String[] recipes = new String[]{"marshmallows","s'mores","pizza","salad","burger","cake","blue stuff"};
+    String[] recipes = new String[]{"marshmallows","s'mores","pizza","salad","burger","cake","blue stuff","grilled cheese"};
     SimpleStringProperty recipe = new SimpleStringProperty(this, "recipe", "");
     SimpleBooleanProperty gameStart = new SimpleBooleanProperty(this, "gameStart", false);
     SimpleBooleanProperty kitchenOpen = new SimpleBooleanProperty(this, "kitchenOpen", false);
