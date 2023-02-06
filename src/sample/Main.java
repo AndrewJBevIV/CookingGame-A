@@ -23,17 +23,17 @@ import javafx.stage.Stage;
 
 import java.util.Random;
 
-public class Main extends Application {
+public class HelloApplication extends Application {
     int score = 0;
     int mistakes = 0;
     boolean gameOver = false;
     Random random = new Random();
-    String[] recipes = new String[]{"marshmallows","s'mores","pizza","salad","burger","cake"};
+    String[] recipes = new String[]{"marshmallows","s'mores","pizza","salad","burger","cake","blue stuff"};
     SimpleStringProperty recipe = new SimpleStringProperty(this, "recipe", "");
     SimpleBooleanProperty gameStart = new SimpleBooleanProperty(this, "gameStart", false);
     SimpleBooleanProperty kitchenOpen = new SimpleBooleanProperty(this, "kitchenOpen", false);
     String[] pantryItems = new String[]{"bread","flour","crackers","pepperoni","chocolate","marinara sauce","marshmallows",
-            "cheese","lettuce","patty","dressing","sugar","eggs","icing"};
+            "cheese","lettuce","patty","dressing","sugar","eggs","icing","methylamine"};
     Button[] pantry = new Button[pantryItems.length];
 
     public static void main(String[] args) {
